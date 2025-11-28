@@ -33,6 +33,14 @@ class PostsController {
     const deleted = await postsService.delete(id);
     return res.json(deleted);
   }
+
+  async search(req: Request, res: Response) {
+    const term = req.query.q as string;
+
+    const posts = await postsService.search(term);
+    return res.json(posts);
+  }
+
 }
 
 export default new PostsController();

@@ -22,6 +22,13 @@ class PostsService {
   delete(id: number) {
     return postsRepository.delete(id);
   }
+
+  search(term: string) {
+    if (!term || term.trim() === "") return [];
+
+    return postsRepository.search(term);
+  }
+
 }
 
 export default new PostsService();

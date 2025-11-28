@@ -3,6 +3,7 @@ import PostsController from "../controllers/PostsController";
 
 const router = Router();
 
+router.get("/search", PostsController.search);
 router.get("/", PostsController.getAll);
 router.get("/:id", PostsController.getById);
 router.post("/", PostsController.create);

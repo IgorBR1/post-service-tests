@@ -32,6 +32,19 @@ class PostsRepository {
       where: { id },
     });
   }
+
+  async search(term: string) {
+    return prisma.post.findMany({
+      where: {
+        OR: [
+          { title: { contains: term, mode: "insensitive" } },
+          { content: { contains: term, mode: "insensitive" } },
+        ],
+      },
+      orderBy: { id: "asc" },
+    });
+  }
+
 }
 
 export default new PostsRepository();
