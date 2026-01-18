@@ -1,5 +1,5 @@
 TN:
-SF:src/app.ts
+SF:src\app.ts
 FNF:0
 FNH:0
 DA:1,1
@@ -18,7 +18,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src/swagger.ts
+SF:src\swagger.ts
 FN:19,setupSwagger
 FNF:1
 FNH:1
@@ -35,7 +35,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src/controllers/PostsController.ts
+SF:src\controllers\PostsController.ts
 FN:6,(anonymous_1)
 FN:11,(anonymous_2)
 FN:17,(anonymous_3)
@@ -76,7 +76,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src/routes/index.ts
+SF:src\routes\index.ts
 FNF:0
 FNH:0
 DA:1,1
@@ -90,7 +90,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src/routes/posts.routes.ts
+SF:src\routes\posts.routes.ts
 FNF:0
 FNH:0
 DA:1,1
@@ -109,7 +109,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src/services/PostsService.ts
+SF:src\services\PostsService.ts
 FN:6,(anonymous_1)
 FN:10,(anonymous_2)
 FN:14,(anonymous_3)

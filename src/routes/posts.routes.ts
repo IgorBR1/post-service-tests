@@ -132,3 +132,4 @@ router.put("/:id", PostsController.update);
 router.delete("/:id", PostsController.delete);
 
 export default router;
+
