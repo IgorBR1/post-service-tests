@@ -23,6 +23,7 @@ jobs:
       - name: Deploy no Railway
         run: railway up --ci
         env:
-          RAILWAY_API_TOKEN: ${{ secrets.RAILWAY_API_TOKEN }}
-          RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID }}
+          RAILWAY_TOKEN: 8c302b8c-d95a-4bbe-bba8-94c655d729a8
+          RAILWAY_PROJECT_ID: 0a336047-e5d9-4507-86e2-6bde7063bc66
+
           NODE_ENV: production
