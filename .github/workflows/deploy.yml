@@ -9,13 +9,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Instalar Railway CLI
-        run: npm i -g @railway/cli
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
+      - run: npm i -g @railway/cli
+      
+      - run: rm -rf ~/.config/railway || true
+      
+      
       - name: Deploy no Railway
-        run: railway up
+        run: railway up --ci --service airy-expression
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+          RAILWAY_PROJECT_ID: 0a336047-e5d9-4507-86e2-6bde7063bc66
+
+          NODE_ENV: production
