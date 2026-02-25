@@ -1,10 +1,10 @@
 {
   "name": "post-service",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "tsc",
+    "build": "tsc -p tsconfig.build.json",
     "start": "node dist/server.js",
     "test": "jest --coverage",
     "migrate:dev": "prisma migrate dev",
@@ -14,7 +14,7 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Serviço de posts em Node.js + TypeScript",
   "dependencies": {
     "@prisma/client": "6.19.0",
     "dotenv": "17.2.3",
@@ -22,6 +22,7 @@
     "helmet": "8.1.0",
     "pg": "8.16.3",
     "prisma": "6.19.0",
+    "supertest": "7.2.2",
     "tsx": "4.21.0",
     "zod": "4.1.13"
   },
@@ -29,6 +30,7 @@
     "@types/express": "5.0.5",
     "@types/jest": "30.0.0",
     "@types/node": "24.10.1",
+    "@types/supertest": "6.0.3",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "eslint": "8.57.0",
