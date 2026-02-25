@@ -6,7 +6,11 @@
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "migrate:dev": "prisma migrate dev",
+    "migrate:deploy": "prisma migrate deploy",
+    "prisma:generate": "prisma generate",
+    "db-púsh": "prisma db push"
   },
   "author": "",
   "license": "ISC",
